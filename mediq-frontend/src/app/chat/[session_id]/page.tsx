@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
+import ReactMarkdown from 'react-markdown'
 
 export default function ChatSessionPage() {
   const { session_id } = useParams()
@@ -42,15 +43,16 @@ export default function ChatSessionPage() {
   const handleAsk = async () => {
     if (!input || !doc) return
 
-    const res = await fetch('http://localhost:8000/chat/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        session_id,
-        document_text: doc.text,
-        user_message: input
-      })
-    })
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/chat/chat`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    session_id,
+    document_text: doc.text,
+    user_message: input
+  })
+})
+
 
     const data = await res.json()
     setMessages(prev => [
@@ -69,7 +71,9 @@ export default function ChatSessionPage() {
         {messages.map((msg, i) => (
   <div key={i} className={`mb-2 max-w-[80%] p-3 rounded-lg ${msg.role === 'user' ? 'bg-blue-100 self-end ml-auto' : 'bg-green-100 self-start mr-auto'}`}>
     <strong className="block text-sm capitalize mb-1">{msg.role}</strong>
-    <ReactMarkdown className="prose prose-sm">{msg.content}</ReactMarkdown>
+    <div className="prose prose-sm">
+      <ReactMarkdown>{msg.content}</ReactMarkdown>
+    </div>
   </div>
 ))}
       </div>
