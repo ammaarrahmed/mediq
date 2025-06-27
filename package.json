@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36"
+  }
+}

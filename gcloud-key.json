@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mediq-vision",
+  "private_key_id": "84e37f912b5410b4178ada8821e5fa5b9af11bfd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuP5w9RZPB6wt7\nV+xg26smHRRqMczF0vvuKh1ySs/EkAr8uSoFLaGrUltqzMImMB/1TK/iiof3+5/+\nXqkgEEhXDx6nc0Qcb7co46PH4Pwx2Jo2HPRjbcXPSZrJ6M4mdG25oEDmucXZg5lD\nHNHM3pTA5PpLpZyr1o46ndeR0S4++NZrUMp/v+z4KkOoh53yrUTe90yLv5Q17wfu\ncyxFypaUzX56mHf7WEjeRarlMYmiO43xomI1N1RFNP+i4+kilstnHLo0p8ehi5g8\ngVR8gJDqvC1rwZBSd179slVTXKJyWT9SDvykl5PAEdHecAqXCNGaJW0J7J2w1f8V\n4h5BEj5bAgMBAAECggEAQ304vxSdS60Fh/MAh21dp0f5Gb6LIQ38bP0b5aIrQedG\nkicHqvTHGuuto7qF8jOOlTxsHVLpofdwOx4f5F7aHfoptdKzzU3Jw8kTrP2rwIS0\nCgSB9abVSFmqXczRV9ydiRmUOak3g+1wJanaar7FH8cwWK9e9MGH2hU7outBvbqQ\nnK85X8xHTqYW98SBxjuufb0mLIk+RFYt+tDNnfZWsSMkc3uiQtmnLxvtyF7xh20Q\nu6p8Ru8+8jxKNFkLcnuGGn0LMt84+fNOWS6sCVasZIjgenpeWvu3uIa62d78+foG\nVWGQdpj6rPkCYQ6CJ3JSv8ackHvZyZdszvC2x3CgsQKBgQDhzOHzpF9g9Yuj3IWp\nS4eOK63wLOZFgylZ18Wc57QzOtNueF38RLUNEA3lHE4mi+5Te2gUbnotb406dh2X\nr4o63JZG1HOT4SeeTB3n1E1uKNL8dUBbBbXjspv8hSaGlNSzAKtspLMyVRAOfOME\nGQr1Sr5EyDFChfW2mj6xxDz2qwKBgQDFjahhXPJF9WI7eEjrn8kWjT+b9iEKgX2u\n2FPtfF/AgnIaEUjxbyTUSuGKFjwvG9zd1MUmCoRP7BkIn7q3k+1rnRsZ2C8zjZkg\nuieOUlYk/9T1xM0H9oAm7rOT7Kpfph6G9/f9QxIhNJb/K8mOHp7MuOv2RJ9FWTnY\nuWKmFpWXEQKBgCtmy0Oeo6qqZ+XePF7XIr4kDTHuH3DbDjazr8tCCjQSqZNBVado\nuXhCTrlsIGVuXifzv4S124wiNf43t+ZxGlvIDKaerXyOOaRGszTdbOiwtiVKkE0u\notCagzsdiNMzhlLF3S1r1vnkucpfHO+rtJyDemEULcvAngM0ULqwopszAoGBAJ2k\nme3/5pDu7FF6fe4Qlr25Pz4sXVdt16ZTmD2Vly8eqQCmNGf9Ag2qJ2oyrhoFiO03\n4Y6mq8i/JYbdN3lQwQ+z0bGA8sGXx8723aPTjkx+Hil0vwwQp1jp+EEdhSNIg2m+\nrJTcFbaLqca74V3Yj23cTuc5AUOsnN2VqePRd9ORAoGAYY7gMKeW7N5fyLFPdPN2\n1lUEbz37hj+2DIdTwPd1twSEv0Ffj2pkHdehblrsYwxM1cvYe51GiuX3UXQutTBd\nwZ91nWd3Q39AtCKO/xAbOaec9+461hJSRhlg83d+IsFlBYjWIwKIYIh6ACSMQhub\nYj7FY4zfNwDNLaQkLs8yWkU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mediq-17@mediq-vision.iam.gserviceaccount.com",
+  "client_id": "118308558795326308826",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mediq-17%40mediq-vision.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
