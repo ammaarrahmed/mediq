@@ -7,3 +7,4 @@ node_modules/
 .idea/
 data/uploads/
 .env.local
+gcloud-key.json
