@@ -1,16 +1,24 @@
-import os
+import logging
 from supabase import create_client, Client
-from dotenv import load_dotenv
-from pathlib import Path
+from config import settings
+from typing import Optional
 
-# ✅ This ensures .env is loaded from the folder where db.py is located
-env_path = Path(__file__).resolve().parent / ".env"
-load_dotenv(dotenv_path=env_path)
+logger = logging.getLogger(__name__)
 
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+class DatabaseManager:
+    _instance: Optional[Client] = None
+    
+    @classmethod
+    def get_client(cls) -> Client:
+        """Singleton pattern for Supabase client"""
+        if cls._instance is None:
+            try:
+                cls._instance = create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)
+                logger.info("✅ Connected to Supabase successfully")
+            except Exception as e:
+                logger.error(f"❌ Failed to connect to Supabase: {e}")
+                raise
+        return cls._instance
 
-# 🧪 Optional: Debug print to check
-print("SUPABASE_URL:", SUPABASE_URL)
-
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+# Global instance
+supabase = DatabaseManager.get_client()
