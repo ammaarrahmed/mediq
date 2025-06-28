@@ -8,3 +8,4 @@ pyjwt
 langchain
 langchain-community
 faiss-cpu
+uvicorn
