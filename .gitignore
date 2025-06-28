@@ -6,4 +6,4 @@ node_modules/
 .DS_Store
 .idea/
 data/uploads/
-.evn.local
+.env.local
