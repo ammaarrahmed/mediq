@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mediq-frontend
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    rootDir: .
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://mediq-backend-gokl.onrender.com

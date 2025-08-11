@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MedIQ Frontend
+
+MedIQ is an AI-powered healthcare assistant that helps patients and healthcare providers manage medical information, documents, and communications.
+
+## Features
+
+- **Authentication**: Login/signup system with role-based access (patient/doctor)
+- **Document Processing**: Upload and analyze medical documents with AI extraction
+- **Chat System**: Talk to an AI assistant about your health and medical documents
+- **Medical Analysis**: Analyze symptoms and get diagnostic guidance
+- **User Profiles**: Manage account information and healthcare details
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ and npm/pnpm
+- Backend API (deployed on Render.com)
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Create a `.env.local` file with your backend URL:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+NEXT_PUBLIC_API_URL=https://your-backend-url-on-render.com
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deploying to Vercel (Recommended)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your code to a GitHub repository
+2. Sign up for [Vercel](https://vercel.com) 
+3. Import the GitHub repository
+4. Add environment variables:
+   - `NEXT_PUBLIC_API_URL`: Your backend API URL
+5. Deploy!
 
-## Deploy on Vercel
+### Deploying to Render.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Sign up for [Render](https://render.com)
+2. Create a new Web Service
+3. Connect to your GitHub repository
+4. Configure the service:
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+   - **Environment Variables**: 
+     - `NEXT_PUBLIC_API_URL`: Your backend API URL
+5. Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Backend Integration
+
+This frontend connects to a FastAPI backend with the following features:
+- Authentication system with JWT
+- Document processing with OCR
+- AI chat using Mistral-7B model
+- Medical analysis system
+- User profile management
+
+Make sure your backend is properly deployed before connecting the frontend.
