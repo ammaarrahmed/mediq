@@ -17,4 +17,4 @@ MedIQ is a full-stack AI-powered assistant that allows users to upload medical d
 | Database    | PostgreSQL (Supabase or local)
 | AI Tools    | Tesseract, OpenCV, LangChain (future)
 
-## Deployed on Render : https://mediq-frontend-2lm7.onrender.com , https://dashboard.render.com/web/srv-d1g62gvgi27c73egq82g
+## Deployed on Render : https://mediq-frontend-2lm7.onrender.com 
